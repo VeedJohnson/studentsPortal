@@ -1,0 +1,66 @@
+p > span, p.title {
+    font-weight: 700;
+    margin-right: 5px;
+    padding-left: 10px;
+}
+
+p {
+    font-size: 18px;
+}
+
+p.title {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+
+.biodata-grid {
+    width: 70%;
+    margin: 30px auto 0 auto;
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    background-color: rgb(200, 255, 255);
+}
+
+.button-grid {
+    text-align: center;
+    padding: 40px;
+}
+.button-grid > button {
+    border: none;
+    padding: 5px 20px;
+    color: white;
+    background-color: rgb(74, 74, 204);
+    border-radius: 5px;
+}
+
+.bio-header  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media print {
+    p {
+        font-family: times, serif;
+        font-size: 16px;
+    }
+
+    .no-print {
+        display: none;
+    }
+
+    p.title {
+        margin-top: 20px;
+    }
+
+    .biodata-grid {
+        width: 85%;
+        margin: 30px auto 0 auto;
+    }
+ }
